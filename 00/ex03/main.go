@@ -1,23 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   printalphabet.go                                   :+:      :+:    :+:   */
+/*   main.go                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nkannan <nkannan@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/10 17:11:45 by nkannan           #+#    #+#             */
-/*   Updated: 2024/06/10 17:50:25 by nkannan          ###   ########.fr       */
+/*   Created: 2024/06/10 17:49:35 by nkannan           #+#    #+#             */
+/*   Updated: 2024/06/10 17:49:36 by nkannan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-package piscine
+package main
 
-import "ft"
+import "piscine"
 
-// PrintAlphabet prints the lowercase alphabet from 'a' to 'z'.
-func PrintAlphabet() {
-	for r := 'a'; r <= 'z'; r++ {
-		ft.PrintRune(r)
-	}
-	ft.PrintRune('\n')
+func main() {
+	piscine.IsNegative(1)
+	piscine.IsNegative(0)
+	piscine.IsNegative(-1)
 }
