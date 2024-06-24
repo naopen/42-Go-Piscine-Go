@@ -6,7 +6,7 @@
 /*   By: nkannan <nkannan@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 18:16:54 by nkannan           #+#    #+#             */
-/*   Updated: 2024/06/10 18:18:20 by nkannan          ###   ########.fr       */
+/*   Updated: 2024/06/25 00:33:22 by nkannan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,10 @@ func PrintNumber(n int) {
 }
 
 func printCombination(digits []int) {
-	for i := 0; i < len(digits); i++ {
+	for i := 0; i < SliceLen(digits); i++ {
 		PrintNumber(digits[i])
 	}
-	if digits[0] != 9-(len(digits)-1) {
+	if digits[0] != 9-(SliceLen(digits)-1) {
 		ft.PrintRune(',')
 		ft.PrintRune(' ')
 	}
@@ -45,7 +45,7 @@ func PrintCombN(n int) {
 	if n <= 0 || n >= 10 {
 		return
 	}
-	digits := make([]int, n)
-	generateCombinations(digits, 0, 0, n)
+	var digits [10]int
+	generateCombinations(digits[:n], 0, 0, n)
 	ft.PrintRune('\n')
 }
