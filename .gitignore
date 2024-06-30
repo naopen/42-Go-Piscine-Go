@@ -1,6 +1,7 @@
 # Project specific
 go.mod
 go-piscine-go-tester/
+*/ex*/ex*
 
 # Executables
 *.out
