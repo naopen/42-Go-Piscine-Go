@@ -1,21 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.go                                            :+:      :+:    :+:   */
+/*   printstr.go                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nkannan <nkannan@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/30 23:40:59 by nkannan           #+#    #+#             */
-/*   Updated: 2024/07/01 01:09:36 by nkannan          ###   ########.fr       */
+/*   Created: 2024/06/11 12:52:31 by nkannan           #+#    #+#             */
+/*   Updated: 2024/06/11 12:53:01 by nkannan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-package main
+package piscine
 
-import (
-	"piscine"
-)
+import "ft"
 
-func main() {
-	piscine.PrintStr(piscine.PrintProgramName())
+// PrintStr prints one by one the characters of a string on the screen.
+func PrintStr(str string) {
+	for _, r := range str {
+		ft.PrintRune(r)
+	}
 }
