@@ -2,6 +2,7 @@
 go.mod
 go-piscine-go-tester/
 */ex*/ex*
+08/ex04/pilot/ex04
 
 # Executables
 *.out
